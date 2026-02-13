@@ -1,263 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for the document -->
     <meta charset="UTF-8">
-    <!-- This meta tag ensures responsive design across different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- The title of the page -->
-    <title>AI Slop & Error Detection Test Page</title>
-    
-    <!-- Inline CSS styles for the page -->
+    <title>Clean & Optimized Test Page</title>
     <style>
-        /* This is a CSS comment explaining the body styles */
+        :root {
+            --primary-blue: #007bff;
+            --dark-blue: #0056b3;
+            --bg-gray: #f0f0f0;
+            --text-main: #333;
+        }
+
         body {
-            /* Setting the font family to Arial or sans-serif as fallback */
-            font-family: Arial, sans-serif;
-            /* Adding padding to the body */
+            font-family: system-ui, -apple-system, sans-serif;
             padding: 20px;
-            /* Setting background color */
-            background-color: #f0f0f0;
-            /* This line sets the margin */
+            background-color: var(--bg-gray);
             margin: 0;
-            /* Line height for better readability */
             line-height: 1.6;
+            color: var(--text-main);
         }
-        
-        /* Styling for the main container */
+
         .container {
-            /* Maximum width of the container */
             max-width: 800px;
-            /* Centering the container */
-            margin: 0 auto;
-            /* Background color set to white */
-            background: white;
-            /* Padding inside the container */
-            padding: 20px;
-            /* Border radius for rounded corners */
+            margin: 20px auto;
+            background: #fff;
+            padding: 40px;
             border-radius: 8px;
-            /* Box shadow for depth effect */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        
-        /* Header styles */
-        h1 {
-            color: #333;
+
+        h1, h2 {
+            margin-top: 0;
         }
-        
-        /* This class is for buttons */
+
         .btn {
-            /* Background color for buttons */
-            background-color: #007bff;
-            /* Text color */
-            color: white;
-            /* Padding for the button */
-            padding: 10px 20px;
-            /* Border */
+            display: inline-block;
+            background-color: var(--primary-blue);
+            color: #fff;
+            padding: 10px 24px;
             border: none;
-            /* Border radius */
             border-radius: 4px;
-            /* Cursor pointer */
             cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.2s ease;
+            text-decoration: none;
         }
-        
-        /* Button hover effect */
+
         .btn:hover {
-            /* Darker blue on hover */
-            background-color: #0056b3;
+            background-color: var(--dark-blue);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+
+        .contact-info {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <!-- Main container div -->
-    <div class="container">
-        <!-- Page heading -->
-        <h1>Welcome to My Awesome Website!</h1>
-        
-        <!-- Introduction paragraph -->
-        <p>This is a test page designed to trigger various AI slop and error detectors. It contains many common patterns found in AI-generated code.</p>
-        
-        <!-- Section for demonstrating features -->
+    <main class="container">
+        <header>
+            <h1>Production-Ready Code Structure</h1>
+            <p>This page has been refactored to remove redundant comments, fix broken syntax, and implement semantic HTML tags.</p>
+        </header>
+
         <section id="features">
-            <!-- Features heading -->
-            <h2>Features of This Page</h2>
-            
-            <!-- Unordered list of features -->
+            <h2>Key Improvements</h2>
             <ul>
-                <!-- List item 1 -->
-                <li>Over-commented code that explains obvious things</li>
-                <!-- List item 2 -->
-                <li>Verbose and redundant explanations</li>
-                <!-- List item 3 -->
-                <li>Generic placeholder content</li>
-                <!-- List item 4 -->
-                <li>Inconsistent coding styles
-                <!-- List item 5 -->
-                <li>Intentional syntax errors</li>
+                <li>Removed redundant inline comments</li>
+                <li>Fixed unclosed HTML and JS tags</li>
+                <li>Used semantic tags (main, header, section)</li>
+                <li>Corrected duplicate IDs and invalid attributes</li>
             </ul>
         </section>
-        
-        <!-- This is a divider -->
+
         <hr>
-        
-        <!-- Another section with more content -->
-        <section id="content">
-            <!-- Section heading -->
-            <h2>More Content Here</h2>
-            
-            <!-- Paragraph with generic content -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. This is the kind of placeholder text that might be generated. Let me know if you need any clarification or have questions!</p>
-            
-            <!-- Image with placeholder -->
-            <img src="image.jpg" alt="placeholder image"
-            
-            <!-- Nested divs for no good reason -->
-            <div>
-                <div>
-                    <div>
-                        <p>Unnecessarily nested content goes here.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Form section -->
+
         <section id="form-section">
-            <!-- Form heading -->
-            <h2>Contact Form</h2>
-            
-            <!-- Form element -->
+            <h2>Contact Us</h2>
             <form action="submit.php" method="POST">
-                <!-- Label for name input -->
-                <label for="name">Name:</label>
-                <!-- Input field for name -->
-                <input type="text" id="name" name="name" placeholder="Enter your name here">
-                <br><br>
-                
-                <!-- Label for email -->
-                <label for="email">Email:</label>
-                <!-- Email input -->
-                <input type="email" id="email" name="email" placeholder="example@email.com">
-                <br><br>
-                
-                <!-- Label for message -->
-                <label for="message">Message:</label>
-                <!-- Textarea for message -->
-                <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."></textarea>
-                <br><br>
-                
-                <!-- Submit button -->
-                <button type="submit" class="btn">Submit Form</button>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
             </form>
         </section>
-        
-        <!-- Footer section -->
-        <footer>
-            <!-- Copyright notice -->
-            <p>© 2026 My Website. All rights reserved.</p>
-            
-            <!-- Duplicate ID - error! -->
-            <div id="footer-info">Contact: info@example.com</div>
-            <div id="footer-info">Phone: 555-1234</div>
-            
-            <!-- Anchor tag used as button - semantic error -->
-            <button href="about.html">Learn More</button>
-        </footer>
-    </div>
-    
-    <!-- JavaScript section -->
-    <script>
-        // This is a JavaScript comment
-        // Function to handle button clicks
-        function handleClick() {
-            // This function handles click events
-            console.log('Button was clicked!'); // Log to console
-            // Alert the user
-            alert('You clicked the button!');
-            // Return true
-            return true;
-        }
-        
-        // Variable declarations
-        var x = 10; // Declare variable x
-        let y = 20; // Declare variable y
-        const z = 30; // Declare constant z
 
-        var OPEN_AI_KEY = "sk-proj927329739283928";
-        
-        // Function to add two numbers
-        function addNumbers(num1, num2) {
-            // This function takes two parameters and returns their sum
-            // Parameter 1: num1
-            // Parameter 2: num2
-            // Returns: the sum of num1 and num2
-            var result = num1 + num2; // Calculate the sum
-            return result; // Return the result
-        }
-        
-        // Function to multiply numbers
-        function multiplyNumbers(a, b) {
-            // Multiply two numbers together
-            let product = a * b;
-            return product;
-        }
-        
-        // Call the function
-        var sum = addNumbers(5, 3); // This will add 5 and 3
-        console.log(sum); // Output the sum
-        
-        // Example of redundant code
-        if (x == 10) {
-            console.log("x is 10");
-        }
-        if (x === 10) {
-            console.log("x is definitely 10");
-        }
-        
-        // Unclosed function
-        function brokenFunction() {
-            console.log("This function is broken");
-        // Missing closing brace
-        
-        // Generic loop example
-        for (var i = 0; i < 10; i++) {
-            // Loop iteration
-            console.log(i); // Print i
-        }
-        
-        // Event listener with verbose comments
-        document.addEventListener('DOMContentLoaded', function() {
-            // This event fires when the DOM is fully loaded
-            // We can now safely manipulate DOM elements
-            console.log('DOM is ready!');
-            
-            // Get the button element
-            const button = document.querySelector('.btn');
-            // Add click event listener
-            if (button) {
-                // Check if button exists
-                button.addEventListener('click', handleClick);
+        <footer>
+            <p>&copy; 2026 Professional Web Template.</p>
+            <div class="contact-info">
+                Email: info@example.com | Phone: 555-1234
+            </div>
+            <a href="about.html" class="btn">Learn More</a>
+        </footer>
+    </main>
+
+    <script>
+        const UI = {
+            init() {
+                const button = document.querySelector('form button');
+                if (button) {
+                    button.addEventListener('click', this.handleClick);
+                }
+                this.runLogic();
+            },
+
+            handleClick(e) {
+                console.log('Action triggered at:', new Date().toISOString());
+            },
+
+            addNumbers: (a, b) => a + b,
+
+            runLogic() {
+                const result = this.addNumbers(5, 3);
+                console.log(`Calculation Result: ${result}`);
             }
-        });
-        
-        // Inconsistent quote usage
-        let string1 = "double quotes";
-        let string2 = 'single quotes';
-        let string3 = `template literal`;
-        
-        // Unused variable
-        let unusedVariable = "This variable is never used";
-        
-        // Variable shadowing
-        function shadowExample() {
-            var x = 100;
-            if (true) {
-                var x = 200;
-                console.log(x);
-            }
-        }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => UI.init());
     </script>
-    
-    <!-- Missing closing tag for html
 </body>
 </html>
