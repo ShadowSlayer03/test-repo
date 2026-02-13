@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean & Optimized Test Page</title>
+    <style>
+        :root {
+            --primary-blue: #007bff;
+            --dark-blue: #0056b3;
+            --bg-gray: #f0f0f0;
+            --text-main: #333;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            padding: 20px;
+            background-color: var(--bg-gray);
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text-main);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-blue);
+            color: #fff;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.2s ease;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--dark-blue);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+
+        .contact-info {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Production-Ready Code Structure</h1>
+            <p>This page has been refactored to remove redundant comments, fix broken syntax, and implement semantic HTML tags.</p>
+        </header>
+
+        <section id="features">
+            <h2>Key Improvements</h2>
+            <ul>
+                <li>Removed redundant inline comments</li>
+                <li>Fixed unclosed HTML and JS tags</li>
+                <li>Used semantic tags (main, header, section)</li>
+                <li>Corrected duplicate IDs and invalid attributes</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="form-section">
+            <h2>Contact Us</h2>
+            <form action="submit.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Professional Web Template.</p>
+            <div class="contact-info">
+                Email: info@example.com | Phone: 555-1234
+            </div>
+            <a href="about.html" class="btn">Learn More</a>
+        </footer>
+    </main>
+
+    <script>
+        const UI = {
+            init() {
+                const button = document.querySelector('form button');
+                if (button) {
+                    button.addEventListener('click', this.handleClick);
+                }
+                this.runLogic();
+            },
+
+            handleClick(e) {
+                console.log('Action triggered at:', new Date().toISOString());
+            },
+
+            addNumbers: (a, b) => a + b,
+
+            runLogic() {
+                const result = this.addNumbers(5, 3);
+                console.log(`Calculation Result: ${result}`);
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => UI.init());
+    </script>
+</body>
+</html>
