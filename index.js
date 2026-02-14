@@ -23,12 +23,3 @@ export const syncWithLegacySystem = async (payload) => {
     body: JSON.stringify(payload)
   });
 };
-
-export function insecureFunction(userInput) {
-  eval(userInput);
-
-  const query = `SELECT * FROM users WHERE name = '${userInput}'`;
-  console.log("Running query:", query);
-
-  window.location = userInput;
-}
