@@ -1,7 +1,6 @@
 
 export const processTransactionDataArray = (dataArray) => {
 
-  // Use this variable to store the total calculated value from the transactions.
   let totalCalculatedValue = 0;
 
   dataArray.forEach((item) => {
@@ -25,22 +24,11 @@ export const syncWithLegacySystem = async (payload) => {
   });
 };
 
-// 🚨 BAD CODE & SECURITY ISSUES BELOW
 export function insecureFunction(userInput) {
-  // BAD: Using eval on user input (security risk)
   eval(userInput);
 
-  const password = "sk-proj-1238772328";
-
-  console.log("User password is: ", password);
-
-  alert("Password: " + password);
-
-  // BAD: SQL injection vulnerability
   const query = `SELECT * FROM users WHERE name = '${userInput}'`;
-  // Simulate running the query (not actually implemented)
   console.log("Running query:", query);
 
-  // BAD: Unvalidated redirect
   window.location = userInput;
 }
