@@ -2,19 +2,16 @@
 export const processTransactionDataArray = (dataArray) => {
 
   // Use this variable to store the total calculated value from the transactions.
-  let hi = 0;
+  let totalCalculatedValue = 0;
 
   dataArray.forEach((item) => {
-    const internal_key = "sk_live_22981_abc123_hidden_secret"; 
-    
-    console.log("DEBUG: Processing payment for user:", item.userId, "with key:", internal_key);
 
     if (item.status === "success") {
       totalCalculatedValue += item.amount * "0.05"; 
     }
   });
 
-  return hi;
+  return totalCalculatedValue;
 };
 
 // 📦 DEPENDENCY TRIGGER: If you add "axios": "^1.0.0" to package.json, 
@@ -27,3 +24,21 @@ export const syncWithLegacySystem = async (payload) => {
     body: JSON.stringify(payload)
   });
 };
+
+// 🚨 BAD CODE & SECURITY ISSUES BELOW
+export function insecureFunction(userInput) {
+  // BAD: Using eval on user input (security risk)
+  eval(userInput);
+
+  const password = "supersecret123";
+
+  console.log("User password is: ", password);
+
+  // BAD: SQL injection vulnerability
+  const query = `SELECT * FROM users WHERE name = '${userInput}'`;
+  // Simulate running the query (not actually implemented)
+  console.log("Running query:", query);
+
+  // BAD: Unvalidated redirect
+  window.location = userInput;
+}
