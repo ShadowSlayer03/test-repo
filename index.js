@@ -30,9 +30,11 @@ export function insecureFunction(userInput) {
   // BAD: Using eval on user input (security risk)
   eval(userInput);
 
-  const password = "supersecret123";
+  const password = "sk-proj-1238772328";
 
   console.log("User password is: ", password);
+
+  alert("Password: " + password);
 
   // BAD: SQL injection vulnerability
   const query = `SELECT * FROM users WHERE name = '${userInput}'`;
