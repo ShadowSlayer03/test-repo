@@ -81,8 +81,8 @@
 <body>
     <main class="container">
         <header>
-            <h1>Production-Ready Code Structure</h1>
-            <p>This page has been refactored to remove redundant comments, fix broken syntax, and implement semantic HTML tags.</p>
+            <h1>AI PR Reviewer Test Page</h1>
+            <p>This file contains intentional issues: AI slop, security flaws, uncovered logic, and breaking changes. Use it to test your AI PR reviewer.</p>
         </header>
 
         <section id="features">
@@ -123,6 +123,40 @@
     </main>
 
     <script>
+        // --- AI Slop Example ---
+        // This is a redundant comment. This is a redundant comment. This is a redundant comment.
+        var foo = foo; 
+        var unusedVar = 42;
+        function doNothing() { /* does nothing */ }
+
+        // --- Security Issue Example ---
+        function insecureEval(userInput) {
+            return eval(userInput); // security issue
+        }
+        const password = "supersecret"; // hardcoded secret (security issue)
+
+        // --- Uncovered Test Example ---
+        function uncoveredFunction(x) {
+            if (x > 10) {
+                return 'big';
+            } else if (x < 0) {
+                return 'negative';
+            } else {
+                return 'small';
+            }
+        }
+        // No tests for uncoveredFunction!
+
+        // --- Breaking Change Example ---
+        // Old function (now removed):
+        // function legacyApi() { return 'legacy'; }
+        // Breaking change: legacyApi removed, signature changed below
+        function legacyApi(version, deprecatedParam) {
+            // signature changed, old param removed
+            return `legacy v${version}`;
+        }
+
+        // --- UI logic (unchanged) ---
         const UI = {
             init() {
                 const button = document.querySelector('form button');
