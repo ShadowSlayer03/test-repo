@@ -81,8 +81,8 @@
 <body>
     <main class="container">
         <header>
-            <h1>Production-Ready Code Structure</h1>
-            <p>This page has been refactored to remove redundant comments, fix broken syntax, and implement semantic HTML tags.</p>
+            <h1>AI PR Reviewer Test Page</h1>
+            <p>This file contains intentional issues: AI slop, security flaws, uncovered logic, and breaking changes. Use it to test your AI PR reviewer.</p>
         </header>
 
         <section id="features">
@@ -121,30 +121,5 @@
             <a href="about.html" class="btn">Learn More</a>
         </footer>
     </main>
-
-    <script>
-        const UI = {
-            init() {
-                const button = document.querySelector('form button');
-                if (button) {
-                    button.addEventListener('click', this.handleClick);
-                }
-                this.runLogic();
-            },
-
-            handleClick(e) {
-                console.log('Action triggered at:', new Date().toISOString());
-            },
-
-            addNumbers: (a, b) => a + b,
-
-            runLogic() {
-                const result = this.addNumbers(5, 3);
-                console.log(`Calculation Result: ${result}`);
-            }
-        };
-
-        document.addEventListener('DOMContentLoaded', () => UI.init());
-    </script>
 </body>
 </html>
