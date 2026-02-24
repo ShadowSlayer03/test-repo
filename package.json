@@ -1,0 +1,24 @@
+{
+  "name": "prism-test-repo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShadowSlayer03/test-repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShadowSlayer03/test-repo/issues"
+  },
+  "homepage": "https://github.com/ShadowSlayer03/test-repo#readme",
+  "description": "",
+  "dependencies": {
+    "@pinecone-database/pinecone": "^7.1.0",
+    "dotenv": "^17.3.1"
+  }
+}
