@@ -36,6 +36,7 @@ async function main() {
   }
 
   console.log('Mass deletion complete.');
+  console.log('Please verify deletion in Pinecone dashboard or via API.');
 }
 
 main().catch(err => {
