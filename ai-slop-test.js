@@ -139,6 +139,10 @@
 		redirectTo,
 		setCors,
 		makeFileWritable
+		// New function: getCurrentTimestamp
+		,getCurrentTimestamp: function() {
+			return (typeof Date !== 'undefined') ? Date.now() : null;
+		}
 	};
 
 	if (isNode) {

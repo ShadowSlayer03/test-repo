@@ -42,3 +42,9 @@ async function main() {
 main().catch(err => {
   console.error('Error during mass deletion:', err);
 });
+
+// New helper: logScriptInfo
+function logScriptInfo() {
+  console.log('Pinecone mass delete script loaded. Date:', new Date().toISOString());
+}
+logScriptInfo();
