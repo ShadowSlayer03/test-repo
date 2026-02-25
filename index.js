@@ -13,6 +13,13 @@ export const processTransactionDataArray = (dataArray) => {
   return totalCalculatedValue;
 };
 
+// New utility function: calculateAverageAmount
+export const calculateAverageAmount = (dataArray) => {
+  if (!Array.isArray(dataArray) || dataArray.length === 0) return 0;
+  const total = dataArray.reduce((sum, item) => sum + (item.amount || 0), 0);
+  return total / dataArray.length;
+};
+
 // 📦 DEPENDENCY TRIGGER: If you add "axios": "^1.0.0" to package.json, 
 // and use it here, it triggers the Dependency Alerter.
 export const syncWithLegacySystem = async (payload) => {
