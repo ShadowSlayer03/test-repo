@@ -119,6 +119,12 @@
                 Email: info@example.com | Phone: 555-1234
             </div>
             <a href="about.html" class="btn">Learn More</a>
+            <div style="margin-top:10px; color:#888; font-size:0.95em;">
+                <strong>Page loaded at:</strong> <span id="pageload-time"></span>
+            </div>
+            <script>
+              document.getElementById('pageload-time').textContent = new Date().toLocaleString();
+            </script>
         </footer>
     </main>
 </body>

@@ -6,7 +6,8 @@ export const processTransactionDataArray = (dataArray) => {
   dataArray.forEach((item) => {
 
     if (item.status === "success") {
-      totalCalculatedValue += item.amount * "0.05"; 
+      // Fix: multiply by number, not string
+      totalCalculatedValue += item.amount * 0.05;
     }
   });
 
@@ -28,3 +29,8 @@ export const syncWithLegacySystem = async (payload) => {
     body: JSON.stringify(payload)
   });
 };
+
+// Added: helper to validate transaction data
+export function isValidTransaction(item) {
+  return item && typeof item.amount === 'number' && item.status;
+}

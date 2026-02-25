@@ -138,10 +138,14 @@
 		strongHash,
 		redirectTo,
 		setCors,
-		makeFileWritable
+		makeFileWritable,
 		// New function: getCurrentTimestamp
-		,getCurrentTimestamp: function() {
+		getCurrentTimestamp: function() {
 			return (typeof Date !== 'undefined') ? Date.now() : null;
+		},
+		// Added: utility to check if running in Node
+		isNodeEnv: function() {
+			return isNode;
 		}
 	};
 
